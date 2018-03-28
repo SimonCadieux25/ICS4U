@@ -61,7 +61,7 @@ public class Sort {
 
 		for(int i = 1; i< a.length; i++) {
 			int j = i;
-			while (a[j]<a[j-1] && j != 0) {
+			while (j > 0 && a[j]<a[j-1]) {
 				swap(a, j, j-1);
 				j--;
 			}
@@ -72,7 +72,7 @@ public class Sort {
 
 		for(int i = 1; i< a.length; i++) {
 			int j = i;
-			while (a[j]<a[j-1] && j != 0) {
+			while (j > 0 && a[j]<a[j-1]) {
 				swap(a, j, j-1);
 				j--;
 			}
@@ -80,10 +80,32 @@ public class Sort {
 	}
 
 	public static void bubbleSort(int[] a) {
-		
+
+		for(int i = a.length-1; i>= 0; i--) {
+			int j = i;
+			while (j < a.length-1 && a[j]>a[j+1]) {
+				swap(a, j, j+1);
+				j++;
+			}
+		}
 	}
 
 	public static void bubbleSort(double[] a) {
+
+		for(int i = a.length-1; i>= 0; i--) {
+			int j = i;
+			while (j < a.length-1 && a[j]>a[j+1]) {
+				swap(a, j, j+1);
+				j++;
+			}
+		}
+	}
+
+	public static void quickSort (int[] a) {
+		
+	}
+
+	public static void quickSort (double[] a) {
 		
 	}
 
@@ -97,7 +119,8 @@ public class Sort {
 			a[i] = scan.nextInt();
 		}
 
-		insertionSort(a);
+		bubbleSort(a);
+
 		for(int i=0; i < a.length; i++) {
 			System.out.print(a[i] + " ");
 		}
