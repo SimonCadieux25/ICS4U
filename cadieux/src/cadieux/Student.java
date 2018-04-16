@@ -2,14 +2,14 @@
 
 public class Student {
 
-	private int Grade, StudentNumber, PhoneNumber;
-	private String FirstName, LastName, PostalCode, EMail, StreetAddress, MiddleInitials, Province, City;
+	private int Grade, StudentNumber;
+	private String  PhoneNumber, FirstName, LastName, PostalCode, EMail, StreetAddress, MiddleInitials, Province, City;
 		
 	public int getStudentNumber() {
 		return StudentNumber;
 	}
 	
-	public void setStudentNumber() {
+	public void setStudentNumber(int StudentNumber) {
 		this.StudentNumber = StudentNumber;
 	}
 	
@@ -17,7 +17,7 @@ public class Student {
 		return LastName;
 	}
 	
-	public void setLastName() {
+	public void setLastName(String LastName) {
 		this.LastName = LastName;
 	}
 	
@@ -25,7 +25,7 @@ public class Student {
 		return FirstName;
 	}
 	
-	public void setFirtsName() {
+	public void setFirtsName(String FirstName) {
 		this.FirstName = FirstName;
 	}
 	
@@ -33,7 +33,7 @@ public class Student {
 		return MiddleInitials;
 	}
 	
-	public void setMiddleInitials() {
+	public void setMiddleInitials(String MiddleInitials) {
 		this.MiddleInitials = MiddleInitials;
 	}
 	
@@ -41,15 +41,15 @@ public class Student {
 		return Grade;
 	}
 	
-	public void setGrade() {
+	public void setGrade(int Grade) {
 		this.Grade = Grade;
 	}
 	
-	public int getPhoneNumber() {
+	public String getPhoneNumber() {
 		return PhoneNumber;
 	}
 	
-	public void setPhoneNumber() {
+	public void setPhoneNumber(String PhoneNumber) {
 		this.PhoneNumber = PhoneNumber;
 	}
 	
@@ -57,7 +57,7 @@ public class Student {
 		return EMail;
 	}
 	
-	public void setEMail() {
+	public void setEMail(String EMail) {
 		this.EMail = EMail;
 	}
 	
@@ -65,7 +65,7 @@ public class Student {
 		return StreetAddress;
 	}
 	
-	public void setStreetAddress() {
+	public void setStreetAddress(String StreetAddress) {
 		this.StreetAddress = StreetAddress;
 	}
 	
@@ -73,7 +73,7 @@ public class Student {
 		return City;
 	}
 	
-	public void setCity() {
+	public void setCity(String City) {
 		this.City = City;
 	}
 	
@@ -81,7 +81,7 @@ public class Student {
 		return Province;
 	}
 	
-	public void setProvince() {
+	public void setProvince(String Province) {
 		this.Province = Province;
 	}
 	
@@ -89,7 +89,7 @@ public class Student {
 		return PostalCode;
 	}
 	
-	public void setPostalCode() {
+	public void setPostalCode(String PostalCode) {
 		this.PostalCode = PostalCode;
 	}	
 }

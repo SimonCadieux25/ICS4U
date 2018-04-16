@@ -8,49 +8,63 @@ public class SchoolSystem {
 
 	private static Student setRecordData() {
 		Student s1 = new Student();
-
+		
+		String in;
+		int in1;
 
 		System.out.print("Please enter the Student Number: ");
-		s1.setStudentNumber();
+		in1 = scan.nextInt();
+		s1.setStudentNumber(in1);
 		System.out.print("Please enter the Last Name: ");
-		s1.setLastName();
+		scan.nextLine();
+		in = scan.nextLine();
+		s1.setLastName(in);
 		System.out.print("Please enter the First Name: ");
-		s1.setFirtsName();
+		in = scan.nextLine();
+		s1.setFirtsName(in);
 		System.out.print("Please enter the Middle Initials: ");
-		s1.setMiddleInitials();
+		in = scan.nextLine();
+		s1.setMiddleInitials(in);
 		System.out.print("Please enter the Grade: ");
-		s1.setGrade();
+		in1 = scan.nextInt();
+		s1.setGrade(in1);
 		System.out.print("Please enter the Phone Number: ");
-		s1.setPhoneNumber();
+		scan.nextLine();
+		in = scan.nextLine();
+		s1.setPhoneNumber(in);
 		System.out.print("Please enter the E-Mail: ");
-		s1.setEMail();
+		in = scan.nextLine();
+		s1.setEMail(in);
 		System.out.print("Please enter the Street Address: ");
-		s1.setStreetAddress();
+		in = scan.nextLine();
+		s1.setStreetAddress(in);
 		System.out.print("Please enter the City: ");
-		s1.setCity();
+		in = scan.nextLine();
+		s1.setCity(in);
 		System.out.print("Please enter the Province: ");
-		s1.setProvince();
+		in = scan.nextLine();
+		s1.setProvince(in);
 		System.out.print("Please enter the PostalCode: ");
-		s1.setPostalCode();
+		in = scan.nextLine();
+		s1.setPostalCode(in);
 		
 		return s1;
 	}
 	
 	private static void displayRecord(Student s1) {
 		
-		System.out.print("Name: " + s1.getLastName() + " " +s1.getMiddleInitials()+ " " + s1.getFirstName() + "\tStudent Number: " + s1.getStudentNumber() + "Grade: " + s1.getGrade()
-						 + "\n\nPhone Number: " + s1.getPhoneNumber() + "\t\tE-Mail: " + s1.getEmail()
-						 + "\nCity: " + s1.getCity() + "\tAddress: " + s1.getStreetAddress() + "\tProvince: " + s1.getProvince() + "\tPostalCode: " + s1.getPostalCode());
+		System.out.println("Name: " + s1.getLastName() + " " +s1.getFirstName()+ " " +s1.getMiddleInitials()+ ". " + "\nStudent Number: " + s1.getStudentNumber() + "\tGrade: " + s1.getGrade()
+						 + "\nPhone Number: " + s1.getPhoneNumber() + "\tE-Mail: " + s1.getEmail()
+						 + "\nCity: " + s1.getCity() + "\tAddress: " + s1.getStreetAddress() + "\tProvince: " + s1.getProvince() + "\nPostalCode: " + s1.getPostalCode());
 		
 	}
 
-	@SuppressWarnings("unused")
-	public static void Main(String args[]) {
+	public static void main(String args[]) {
 
 		
 		boolean valInput = false;
 		Student RecordLocation = null;
-		while(valInput = false) {
+		while(valInput == false) {
 			System.out.println("Welcome To The Schools File Managment System \nWould you like to:\nEnter A New Record\nPrint Record\nQuit");
 			
 			String input = scan.nextLine();
@@ -73,7 +87,7 @@ public class SchoolSystem {
 			System.out.println("Do you want to do anything else?");
 			input = scan.nextLine();
 			if(input.equals("Yes")) {
-				valInput = true;
+				valInput = false;
 			}
 		}
 	}
