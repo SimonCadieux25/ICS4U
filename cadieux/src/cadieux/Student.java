@@ -1,12 +1,10 @@
-package cadieux;
+ package cadieux;
 
 public class Student {
 
-	
 	private int Grade, StudentNumber, PhoneNumber;
 	private String FirstName, LastName, PostalCode, EMail, StreetAddress, MiddleInitials, Province, City;
-	
-	
+		
 	public int getStudentNumber() {
 		return StudentNumber;
 	}
@@ -93,6 +91,5 @@ public class Student {
 	
 	public void setPostalCode() {
 		this.PostalCode = PostalCode;
-	}
-	
+	}	
 }
